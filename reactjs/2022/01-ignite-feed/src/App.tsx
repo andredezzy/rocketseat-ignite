@@ -1,9 +1,21 @@
-import { useState } from 'react'
+import { Header } from './components/Header';
 
-function App() {
+import styles from './App.module.css';
+
+import './global.css';
+import { Sidebar } from './components/Sidebar';
+
+export function App() {
   return (
-    <h1>Hello World!</h1>
+    <div>
+      <Header />
+
+      <div className={styles.wrapper}>
+        <Sidebar />
+        
+        <main>
+        </main>
+      </div>
+    </div>
   )
 }
-
-export default App
