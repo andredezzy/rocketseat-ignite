@@ -3,19 +3,22 @@ import { Heading, Text } from '@ignite-ui/react'
 import appPreviewImage from '../../assets/app-preview.png'
 import Image from 'next/image'
 import { Hero } from './styles'
+import { ClaimUsernameForm } from '@/components/ClaimUsernameForm'
 
 export default function Home() {
   return (
     <div className="flex items-center gap-20 ml-auto max-w-[calc(100vw-(100vw-1160px)/2)] h-screen">
       <Hero className="max-w-lg px-10">
-        <Heading as="h1" size="4xl">
+        <Heading as="h1" size="4xl" className="font-bold">
           Agendamento descomplicado
         </Heading>
 
-        <Text size="xl">
+        <Text size="xl" className="mt-2">
           Conecte seu calendário e permita que as pessoas marquem agendamentos
           no seu tempo livre.
         </Text>
+
+        <ClaimUsernameForm />
       </Hero>
 
       <div className="pr-8 overflow-hidden hidden sm:block">
